@@ -46,6 +46,16 @@ a {
 	color: var(--main_clr);
 	font-weight: 300;
 }
+.bg {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
 .mb-1 {
 	margin-bottom: 1rem;
 }
@@ -187,10 +197,12 @@ header .box-left .bg {
 }
 header .logo-box {
 	position: absolute;
-	width: 150px;
-	height: 150px;
+	width: 16%;
+	min-width: 130px;
+	max-width: 200px;
 	top: 50%;
 	left: 50%;
+	border: 1px solid red;
 
 	transform: translate(-50%, -50%);
 	z-index: 2020;
@@ -209,6 +221,35 @@ header .box-right .item {
 header .box-right .item h3 {
 	font-size: calc(4.3vw + 18px);
 }
+
+/* SECTION ONE */
+
+.one {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid pink;
+	flex-wrap: wrap;
+	margin-bottom: 500px;
+}
+.square {
+	border: 1px solid green;
+	flex: 0 0 50%;
+	aspect-ratio: 1 / 1;
+	max-height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.inner-box {
+	flex: 0 0 50%;
+
+	height: 50%;
+	border: 1px solid blue;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 998px) {
