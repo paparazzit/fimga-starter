@@ -241,8 +241,24 @@ header .box-right .item h3 {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	position: relative;
+	overflow: hidden;
+}
+.square-right .bg {
+	object-fit: cover;
+	object-position: center;
+}
+.square-right .bg img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+	object-position: center;
 }
 
+.square-right {
+	align-items: flex-end;
+	justify-content: flex-end;
+}
 .inner-box {
 	flex: 0 0 50%;
 
